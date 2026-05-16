@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"C:\\\\xampp\\\\htdocs\\\\Kayyem-Therapy\" -Recurse -Include *.html, *.css, *.js, *.png, *.jpg, *.jpeg, *.gif, *.svg, *.yml, *.yaml, *.json, *.md)",
+      "Bash(Select-Object -ExpandProperty FullName)",
+      "Bash(Sort-Object)",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\xampp\\\\htdocs\\\\Kayyem-Therapy\" -Recurse | Where-Object { $_.PSIsContainer } | Select-Object -ExpandProperty FullName | Sort-Object)"
+    ]
+  }
+}
